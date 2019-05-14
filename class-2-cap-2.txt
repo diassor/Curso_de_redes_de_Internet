@@ -1,0 +1,56 @@
+Que es la red , internet, lan, wan, y toplogias de red
+
+LAN (Local Area Network-Red de area local):
+	Es una red que conecta ordenadores o dispositivos en
+	un área relativamente pequeña con el fin de compartir
+	recursos, datos o apps.
+
+WAN (Wide Area Network-Red de area amplia):
+	Este tipo de red generalmente sirve para conectar
+	dispositivos que se encuentran separados por un área
+	geográfica extensa, es decir, si las redes LAN conectan
+	computadores o dispositivos en un area “pequeña”, las
+	redes WAN conectaran “sucursales” con sedes centrales.
+
+MAN (Metropolitan Area Network-Red de área metropoltana):
+	Es una infraestructura de red que abarca un area mayor
+	a una LAN pero menor que una WAN.
+
+ISP (Internet Service Provider-Proveedor de servicios de
+	Internet):
+	Es la empresa que te brinda la conexión a Internet y
+	te permite navegar por la red.
+
+Internet: Es una red de redes interconectadas mundialmente.
+	“NO existe la nube”.
+
+Topología de red: Es el mapa físico y lógico de la red.
+
+
+
+	~El objetivo de una red es transportar un elemento de
+	 un lugar a otro.
+
+Siempre tenemos un punto de partida y un punto de llegada.
+Una red informática es un conjunto de equipos conectados
+entre sí por medio de dispositivos físicos o inalámbricos
+que envían y reciben impulsos eléctricos, ondas
+electromagnéticas, o cualquier otro medio para el transporte
+de datos.
+
+    La red LAN es una red pequeña como las que tenemos
+		en la casa, o en una oficina pequeña.
+
+	Las redes WAN son redes que interconectan países o ciudades.
+
+	Las redes MAN conecta como un barrio, esto quiere
+		decir que es mucho más pequeña.
+
+¿Qué es internet?
+	El internet es una red de redes interconectadas
+	mundialmente
+
+
+Topología: Es la ubicacion fisica de los dispositivos
+
+Topología logica como se conectan con otros computadores

@@ -1,0 +1,65 @@
+Intranet y Extranet
+
+Esta clase vamos a hablar de dos formas en las que podemos
+diseñar e implementar las redes de acuerdo con caraterísticas
+de acceso que queremos dar a los usuarios.
+
+Intranet
+	Son aquellas redes internas que en las que el acceso a la información
+	esta estrictamente limitada a personal de la compañía.
+	Este tipo de redes se restringen con el uso de software y se usan
+	en situaciones en las que la información a la que pueden acceder
+	los usuarios es confidencial.
+
+
+Extranet
+	El siguiente nivel de acceso sucede cuando las compañías requieren
+	dar acceso seguro y bajo confidencialidad a usuarios externos
+	incluso a organizaciones diferentes a la que posee la información.
+
+Esto puede pasar por ejemplo cuando una compañía requiere compartir
+	documentos o información con proveedores o contratistas.
+
+
+	Entiendo, que tanto la Intranet como la Extranet son redes que
+	pertenecen a una misma empresa u organizacion.
+
+	Tanto la Intranet como la Extranet tienen accesos controlados con
+	nombre de usuario y contraseña dependiendo de quien accede y
+	el tipo de informacion a la que se accede.
+
+	En el caso de la Intranet a esta tienen acceso los asociados,
+	trabajadores y/o usuarios internos de la organizacion mediante
+	una red interna de computadores.
+
+	La intranet en general incluye:
+
+	    Acceso a directorios internos
+	    Acceso a las bases de datos de la empresa
+	    Publicacion de documentos internos
+	    Creacion de aplicaciones sencillas de trabajo en equipo
+
+	Esto genera cohesion y motivacion de la fuerza de trabajo.
+		Además, permite el manejo eficiente de la información eliminando
+		superposicion o traslapos.
+
+
+La extranet es para el uso de clientes o usuarios externos.
+	Por ejemplo, en un banco es, la banca en linea o en un servicio
+	de mensajeria es, el acceso a el rastreo del envio.
+	A esta se tiene acceso mediante computadores y/o redes externas.
+	Un VPN selecciona la información que ingresa.
+
+	Las ventajas son:
+
+	    Mejor control de las cadenas de proveedores y proveeduria,
+		autorastreo, administración del inventario.
+	    Horarios flexibles
+
+
+Todo esto requiere seguridad, privacidad y se logra a traves del
+	administrador del “firewall”.
+	El acceso se da por http o tcp/ip .
+
+
+	

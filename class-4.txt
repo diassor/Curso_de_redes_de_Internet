@@ -1,0 +1,141 @@
+Ejemplos de Topología de redes y sus usos
+
+
+
+La topología de red nos permite identificar la forma en que los
+nodos están conectados.
+La información se envía a través de los medios y de los nodos para
+viajar de un lugar a otro.
+
+Ya vimos las dos formas en que podemos mostrar estos diseños,
+	física cuando queremos mostrar los equipos de red que conforman el diseño
+	y lógica para mostrar el direccionamiento lógico de los dispositivos.
+
+La topología mas rápida de implementar y de ver es cuando tenemos dos
+	nodos conectados por un medio para enviar información esta es
+	llamada Punto a Punto, un punto envía información al otro.
+
+Luego tenemos otras topologías, veamos algunas de sus características
+	y ventajas.
+
+Topología de bus
+
+
+Este tipo de topología es el mas usado en redes de tipo LAN.
+En esta topología los nodos están conectados a un mismo medio que
+transporta la información.
+
+La ventaja de este tipo de red es que es fácil de implementar y
+puede crecer rápidamente sin tener que hacer cambios bruscos a la red.
+
+Esto, aunque es una gran ventaja y seguro le facilita la vida al
+administrator de la red, presenta dos inconvenientes,
+	uno es que el tráfico de todos los nodos puede ser visto por los otros
+	y el segundo es que a medida que la red crezca se va a ver afectado
+		el rendimiento.
+
+
+
+Topología de anillo
+
+
+Este tipo de topología consiste en que cada nodo tiene una única
+conexión de entrada y una conexión de salida.
+
+Un token de confirmación viaja a través de cada nodo avisando que se
+envió y fue recibida correctamente.
+
+Este tipo de topología aunque garantiza el envío de la información
+puede llegar a ser un poco lenta ya que ésta debe pasar por cada nodo
+intermedio antes de alcanzar su objetivo.
+En el caso de que uno de los nodos fallé esto puede afectar el
+funcionamiento de la red.
+
+
+Topología de estrella
+
+
+En esta topología todos los nodos están conectados a un punto central,
+esta implementación permite garantizar el funcionamiento de la red,
+de forma que si alguno de los nodos falla esto no va a afectar para
+nada el funcionamiento ni el rendimiento de la red.
+
+Esta topología se usa mucho en redes LAN,
+	por ejemplo en oficinas en las que hay un switch al que llegan
+	todas las conexiones de los dispositivos a través de cable.
+
+Es una topología que permite agregar nodos nuevos siempre que el
+dispositivo central lo permita,
+sin embargo en caso en que el nodo central falle toda la red dejará
+de funcionar.
+
+
+Topología de malla
+
+
+En las topologías de tipo malla todos los nodos están conectados
+entre sí, este tipo de conexión permite que cada nodo pueda actuar
+como servidor y como cliente.
+
+Esta es una forma óptima de mantener la conexión entre dispositivos
+en una red, ya que se reduce a uno la cantidad de dispositivos por
+los que debe viajar la información y en caso de que un nodo de la red
+falle los datos pueden ser enviados por otro camino,
+lo que asegura disponibilidad.
+
+
+Topología de árbol
+
+
+En esta topología contamos con varios dispositivos intermedios que
+permiten que otros nodos se conecten.
+Por ejemplo, podemos tener un punto inicial que recibe la conexión a
+	Internet desde el ISP, de allí viaja por el medio a un switch
+	que distribuye a otros dispositivos que pueden ser nodos u otros
+	dispositivos intermedios, switches, routers etc.
+	quienes a su vez envían los datos a otros dispositivos iguales.
+
+La forma de la red se parece mucho a un árbol.
+
+También podemos hacer combinaciones de estas topologías para
+realizar nuestras propias implementaciones de acuerdo con las
+necesidades de los usuarios.
+
+
+Nota :
+	Nodo/s: Computadoras, servidores, etcétera.
+	ISP: Proveedor de Internet.
+
+
+	DISPOSITIVOS DE RED
+	**Repetidores: ** Dispositivo que se utiliza para regenerar una
+	señal analógica o digital que se distorsionan a causade la atenuación,
+	no toma decisiones inteligentes.
+
+	Hub: concentran las conexiones, permiten que se traten a un
+	grupo de computadores como si fueran una sola unidad sin interferir
+	en la transmisión, además de concentrar host regeneran señales.
+
+	Cada mensaje enviado por una computadora es recibido por todas,
+	y es procesado solo por el destinatario.
+	El problema con el hub es que cualquiera que quisiera puede ver
+	la información que reciben los demás.
+
+	**Puentes: ** convierten los formatos de transmisión de datos,
+	además de realizar la administración básica en la transmisión de datos.
+
+	Switches: Al contrario del HUB, el switch agrega inteligencia a la
+	administración de transferencia de datos, cada mensaje enviado a
+	un destinatario será solo recibido por él, ya que el switch sabe
+	que dispositivo está conectado en cada puerto de conexión.
+		Algunos switches tienen la capacidad de subdividir grupos de
+		puertos en redes virtuales (conocidas como VLANS)
+		las cuales funcionan como switches independientes, permitiendo
+		aislar en grupos distintos dispositivos.
+
+
+	Routers: poseen todas las funcionalidades de los hardwares anteriores,
+			 pueden regenerar señales, concentrar múltiples conexiones
+			 y manejar transferencia de datos a otras redes.
+
+			 

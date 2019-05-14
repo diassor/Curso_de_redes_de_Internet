@@ -1,0 +1,61 @@
+Tecnologias de acceso a internet : Banda ancha y Velocidad de Internet
+
+Los medios tienen medidas para ser calculadas
+	Ancho de Banda : Es la capacidad de bits pueden movilizarsen por Este
+		medio , es la capacidad maxima que pueden transmitir los bits
+
+Las empresas de servicos como ejemplo nos venden 50 MBits/seg
+	pero los documentos se manejan en bytes
+
+	Un bit = 1 o 0
+	un byte conjunto de 8 bits
+
+	Cuanto tiempo demora en descargar un doc que pesa 10Mbs si
+	la empresa nos ofrece 50Mbits/seg
+
+	bits  -->  MB?
+
+	1MB * 1000KB/1MB = 1000KB
+
+	1000KB * 1000b/1KB = 1.000.000 b
+
+	1MB = 1.000.000 b (un mega byte tiene un millon de bits)
+
+	cuantos bits hay un megabytes?
+
+	bits --> MB ?
+	1MB * 1024KB/1MB = 1024KB
+
+	1024KB * 1024b/1KB = 1048576B
+
+	1048576B * 8b/1B = 8'388.608b (hay 8'388.6085b en 1MB)
+
+	ISP = 50Mb/s  (5.96MB/seg)
+
+	50Mb = 50'000.000b
+
+	50'000.000b *1B/8b = 6'250.000B
+
+	6'250.000B * 1KB/1024B = 6103.52KB
+
+	6103.52KB * 1MB/1024KB = 5.96MB/seg
+
+	5.96MB/seg es la Velocidad que me vende la ISP
+		es la Velocidad de descarga
+
+Mi velocida es de 15Mbs
+
+	15Mbs = 15'000.000b * 1B/8b = 1'875.00B * 1KB/1024B = 1831,0546875KB
+
+	1831,0546875KB * 1MB/1024KB = 1,788139343MB
+
+	Mi velocidad  de 15Mbs = 1.7 MB /seg
+
+
+Teniendo en cuenta que un bit puede ser un 0 o un 1 tenemos que:
+
+	1 Kilobit (Kb-Kbit) = 1000 bits (b)
+	1 Megabit (Mb) = 1000 Kilobits (Kb)
+	1 Byte (B) = 8 bits (b) => Al byte también lo llaman octeto
+	1 Kilobyte (KB) = 1024 Bytes (B)
+	1 Megabyte (MB) = 1024 Kilobytes (KB)

@@ -1,0 +1,34 @@
+Capitulo 3  Configuracion de dispositivos (IOS CISCO)
+
+Instalacion de Packet Tracer, emulador de redes
+
+Existe software que nos permite hacer simulación de redes,
+de forma que podamos probar todos los casos antes de hacer las
+implementaciones reales.
+
+Para este curso vamos a estar usando Packet Tracer,
+este es un software que Cisco ofrece en versión de estudiante para que
+podamos aprender y prácticar.
+
+Cisco es una de las empresas mas grandes y quien manda la parada en
+cuanto a investigación y nuevos desarrollos en el tema de redes.
+
+Sus dispositivos son ampliamente usados en entornos empresariales y
+ademas ofrece a quien quiera aprender mucho contenido en su sitio
+www.netacad.com.
+
+Uno de los contenidos que te recomiendo está aquí:
+
+	Packet Tracer. Este es un curso gratuito que te va a abrir un mundo
+		de oportunidades.
+		Y ademas nos va a ayudar para que continuemos con nuestro
+		curso de redes.
+
+Entra al link que te dejé antes y enrólate al curso, de esta forma vamos a
+poder descargar e instalar Packet Tracer.
+La instalación es realmente sencilla, unas vez que hayas hecho el registro
+en Netacad vas a encontrar en los recursos del curso el instalador para
+tu sistema operativo, lo descargas y sigues las indicaciones del asistente.
+
+Packet Tracer no esta disponible para dispositivos con IOs por eso
+estaremos trabajando las simulaciones en Windows.
