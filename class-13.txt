@@ -1,0 +1,46 @@
+Segmentacion de los mensajes y unidades de datos de protocolos
+
+
+
+Dos características que nos ayudan son el tamaño del mensaje y
+	el formato del mensaje.
+
+    La segmentación consisten en tomar un mensaje muy grande
+	y dividirlo en mensajes más pequeños.
+
+    La multiplexación es la combinación de dos o más canales
+	de información en un solo medio de transición.
+
+PDU Protocol Data Unit
+	es una unidad que nos permite identificar la información a
+	medida que es transmitida a través de las capas de red.
+
+
+
+La multiplexión es compartir un canal con varias señales,
+es muy importante ya que es igual de caro mantener una línea
+con alto ancho de banda que una con bajo,por eso se pensó en la
+multiplexión,hay 3 formas principales de aplicarla
+
+	    Por división de frecuencia :
+			cuando se divive al ‘espectro’ en distintas bandas
+			de frecuencia,en donde cada usuario puede usar una
+			frecuencia distinta que no interfiera con las demás.
+
+			En el mundo normal sería como que distintas personas
+			en un bar hablan en distintos volumenes de voz.
+
+	    Por división de tiempo :
+			cuando cada usuario toma ‘turnos’ para recibir todo el
+			ancho de banda y mandar su información.
+
+			En el ejemplo de antes sería que en el bar cada persona
+			tome su turno para hablar y las demás se queden calladas.
+
+		Por división de código :
+			En esta,cada usuario del canal usa una codificación distinta
+			para hablar,de esta forma todos pueden usar el canal al
+			mismo tiempo reduciendo la interferencia del canal.
+
+			En los ejemplos anteriores sería que cada persona en el bar
+			hable un idioma distinto.

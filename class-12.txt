@@ -1,0 +1,79 @@
+Modelos de referencia Modelo OSI, Modelo TCP/IP
+
+Los modelos de protocolos de referencia son normas y estandares
+que  nos ayudan a determinar las faces y los protocolos por
+los que la informcacion va a viajar hasta llegar a su destino
+
+	capa de red es la que esta mas cerca al hardware
+	capa de internet
+	capa de transporte
+	capa de Aplicación
+
+MODELO TCP/IP                      SUITE DE PROTOCOLOS (PRINCIPALES)
+
+Capa de Aplicación					SSH		FTP		SMTP	DHCP
+									DNS		RIP 	SNMP 	HTTP
+
+
+CAPA DE TRANPORTE 					TCP 	DCCP 	UTP
+									UDP		ICMP	FCP
+
+CAPA DE INTERNET 					IP		ICMP
+									IPSEC	IGMP
+
+CAPA DE INTERFAZ DE RED 			ARP 	L2TP
+									NDP 	ETHERNET
+
+
+
+
+
+					MODELO OSI
+capas superiores
+	7 ~ APLICACION			SERVICIOS DE RED A APLICACIONES
+	6 ~ PRESENTACION 		REPRESENTACION DE DATOS Y ENCRIPTACION
+	5 ~ SESION 				COMUNICACION ENTRE DISPOSITIVOS DE RED
+
+capas inferiores
+	4 ~ TRANSPORTE 			CONEXION DE EXTREMO A EXTREMO Y CONFIABILIDAD
+	3 ~ RED 				DETERMINACION DE RUTA Y DIRECCIONAMIENTO LOGICO
+	2 ~ ENLACE DE DATOS 	DIRECCIONAMIENTO FISICO
+	1 ~ FISICA				SENALIZACION Y TRANSMISION BINARIA
+
+
+
+es comun estosprotocolos en los dos metodos ya que son similares
+
+Física:
+	Es la capa de los medios, son los cables, elementos que
+	transmiten la información que transportan las señales y
+	que llevan los mensajes
+
+Enlace de datos:
+	Los equipos que hacen los direccionamiento.
+	Estamos hablando de los medios fiscos pero no del cableado
+	sino de los dispositivos que nos permiten codificar y decodificar
+	la información.
+
+Red:
+	es la capa que hace el direccionamiento lógico,
+	el direccionamiento de IP.
+
+Transporte:
+	Nos da la conexión de extremo a extremo.
+	Tiene los protocolos TCP y UDP.
+	Nos aseguran que el mensaje fue enviado y recibido.
+
+
+Sesión:
+	Es una capa que se abre y nos mantiene el flujo de información
+	que nos permite la comunicación entre los dispositivos de red.
+
+
+Presentación:
+	Se refiere a la representación que tiene los archivos desde
+	las aplicaciones.
+
+
+Aplicación:
+	es la capa que tu ves, la que ves como usuario final

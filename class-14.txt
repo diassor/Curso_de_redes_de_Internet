@@ -1,0 +1,10 @@
+Practica con Whireshark para ver el trafico de red
+
+
+https://www.wireshark.org/
+
+Capturador de paquetes para analisis de datos y uso de medios
+
+se tomaron datos para el ejemplo
+seidentifica cada uno los protocolos, medios ,
+quie envio , y quepaquete se envio

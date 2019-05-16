@@ -1,0 +1,149 @@
+suites de Protocolos
+
+Una suite de protocolos es un conjunto de protocolos que nos ayudan
+desde las diferentes capas y servicios de la red a garantizar que
+la información viaja de un lugar a otro, de forma segura y confiable,
+algunos de estos sirven para garantizar que la información es entregada
+o no como lo son TCP y UDP.
+
+En la siguiente clase estaremos hablando de los modelos de referencia
+para la transmisión de datos en Internet,
+el modelos OSI y el modelos TCP/IP.
+
+Veremos que son similares y una de las cosas por las que esto es así
+es porque los protocolos que ambos usan en sus capas son protocolos
+abiertos, de uso libre, de forma que pueden estar implementados
+en cualquier dispositivo de hardware o a través de software.
+
+A continuación listo algunos de los protocolos usados en las diferentes
+capas de red y su funcionamiento:
+
+
+
+
+De la capa de Acceso a la Red (TCP/IP) / Física + Enlace de Datos (OSI)
+***********************************************************************
+***********************************************************************
+
+
+ARP = Es el protocolo que permite hacer la asignación de direcciones
+	  físicas y direcciones lógicas en el modelo OSI funciona en la
+	  capa de Enlace a Datos en la capa lógica.
+
+
+Ethernet = Es el protocolo que nos permite definir los estándares
+		   relacionados con los medios cableados y la señalización
+		   en la capa de Red.
+
+
+Controladores de NIC = Corresponde a la definición de los algoritmos
+					   que llevan las instrucciones a la máquina para
+					   recibir y enviar datos a través de la tarjeta de
+					   acceso a Internet del dispositivo.
+
+
+
+Capa de Internet (TCP/IP) / Capa de Red (OSI)
+*********************************************
+*********************************************
+
+
+IP = Protocolo de Internet, es el protocolo encargado de la asignación
+	 de direcciones lógicas a los dispositivos, recibe los segmentos
+	 de la capa de transporte y los direcciona a través de la red.
+
+
+NAT = (Network Address Translation,) es te protocolo hace la traducción
+	  de direcciones IP privadas en direcciones IP públicas únicas
+	  globalmente.
+
+	  Es un protocolo que permite a los routers enviar mensajes a través
+	  de Internet.
+	  Cada dispositivo en la red LAN sale a Internet a través de un
+	  dispositivo llamada Router que contiene un listado de direcciones
+	  IP privadas vs direcciones IP públicas.
+
+	  Cuando un host quiere enviar un mensaje a un dispositivo externo
+	   el router determina a través de NAT a donde debe enviar.
+
+	   Con el uso de direcciones IPv6 se espera que el uso de este
+	   protocolo no sea necesario ya que es posible asignar a cada
+	   host en en el mundo una dirección lógica única.
+
+
+ICMP = Este protocolo apoya al protocolo IP proporcionando mensajes
+	   y notificaciones de error cuándo un mensaje no puede alcanzar
+	   su destino.
+	   Valida que el mensaje haya alcanzado su destino, valida también
+	   si la el tiempo de vida del mensaje ya ha sido superado entre
+	   otras cosas.
+	   Su labor es únicamente informar sobre el error sin ejecutar
+	   acción alguna para resolverlo.
+
+
+
+Capa de Transporte (TCP/IP) / Capa de Red (OSI)
+***********************************************
+***********************************************
+
+Los protocolos de esta capa son TCP y UDP, de ellos estaremos
+hablando mas adelante en el curso.
+
+
+
+Capa de Aplicación (TCP/IP) / Capa de sesión + Capa de Presentación
+		+ Capa de Aplicación (OSI)
+*******************************************************************
+*******************************************************************
+
+
+
+DNS = Domain Name System,
+	  es el protocolo encargado de hacer la traducción de direcciones
+	  IP (172.217.14.163) en textos que podamos leer y recordar
+	  fácilmente como www.google.com
+
+
+DHCP Es el protocolo encargado de asignar direcciones IP de forma
+	 dinámica a los dispositivos.
+	 Esta pendiente de liberar las direcciones cuando estás ya no
+	 están siendo usadas.
+
+
+SMTP = Este es un protocolo de envío de correo, pongo en negrita la
+	   palabra porque este es precisamente su funcionamiento,
+	   tanto desde los hosts como desde los servidores, el
+	   protocolo SMTP es en encargado de enviar los mensajes.
+
+
+POP = Junto con IMAP, POP es un protocolo encargado de la recepción
+	  de los mensajes en el dispositivo de destino.
+	  POP descarga los mensajes desde el servidor a tu pc y son
+	  eliminados del servidor.
+	  Si recibes un mensaje usando el protocolo POP ese mensaje
+	  puede ser consultado sin conexión a Internet luego de ser
+	  descargado al pc, pero si se borra de tu pc ya no hay manera
+	  de recuperarlo.
+
+
+IMAP = El otro protocolo para recuperación de correo, en este
+	   caso los mails son revisados desde el servidor, de forma
+	   que se requiere conexión a Internet para leer los mensajes,
+	   puedes acceder a tus mails desde diferentes dispositivos y no
+	   tienes que preocuparte por la recuperación ya que el servidor
+	   realiza copias de seguridad para garantizar que el mail
+	   sigue disponible.
+
+
+
+FTP/TFTP = Son protocolos para transferencia de archivos.
+
+
+HTTP/HTTPS
+	Este es tal vez el protocolo que todos sabemos que es familiar,
+	porque es el que usamos todo el tiempo siempre que estamos
+	consultando información en internet.
+
+	El protocolo HTTP es el conjunto de reglas que definen la
+	forma en que son enviados los mensajes para el intercambio
+	de texto a través de la red.

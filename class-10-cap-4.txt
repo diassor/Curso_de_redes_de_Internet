@@ -1,0 +1,58 @@
+Capitulo 4 Protocolos y comunicaciones de red
+
+Aspectos basicos de comunicación
+
+Los elementos basicos de la comunicacion son :
+
+	El emisor , el mensaje, el canal o medio y el receptor
+
+Los Protocolos ( REGLAS )son las normas que nos indican establecer una comunicacion
+que sea efectiva.
+
+Necesitamos establecer Protocolos que nos ayuden a ver que informacion
+pasan por todas las capas de que tienen los procesos de comunicación
+
+	Codificacion del mensaje
+	formato y encapsulamiento del mensaje
+	Tamano del mensaje
+	Sincronizacion
+	Opiones de entrega
+
+en informatica como salen los mensajes de la primera capa
+que se conviertan en bits que no se pierdan .
+
+Protocolos en redes
+	Codificacion del mensaje
+		que tipo de lenguaje se usara como se codifica y descodifica
+		el mensaje
+
+	Formato y encapsulamiento
+
+ejemplo una carta  tiene un sobre
+el sobre = direccion de origen y destino (este es el primer encapsulamiento)
+la carta = la informacion como tal
+
+encapsulamiento ponemos
+	banderas de inicio o indicador
+	recibe  identificar quien va a recibir
+	fuente de identificacion
+	encapsulamiento de data (meta datos saber si el mensaje
+			llega y si llega limpio)
+	finalizacion del mensaje
+
+Tamano del mensaje
+	el Tamano es importante y tiene limites
+
+Sincronizacion
+	se determina el envio y llegada osea el proceso de Sincronizacion
+
+opciones de entrega
+	unidifuncion es de un host  a una sola pc
+
+	multidifuncion  envia paquetes a un grupo mas pequeno
+		 dentro de toda la red no todos los host solo a un grupo
+
+	difuncion envia paquetes a toda la red sin importar quien envia
+		o quien la recibe en toda la red
+
+		
