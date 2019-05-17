@@ -1,0 +1,53 @@
+Capa de enlace de datos: Elementos y Funciones
+
+
+
+Capa de Enlace de Datos:
+		Es la que se encarga de comunicar la parte
+        fisica con la parte logica.(CAPA DE RED)
+
+
+MAC: Capa de acceso al medio fisico.
+	 Esto es una direccion que identifica unicamente a cada una
+	 de las tarjeta de red que tiene nuestros dispositivos.
+
+
+LLC: Capa de acceso lógico,
+     esta capa es la que nos permite pasar los datos de forma lógica,
+	 transformarlos para que la capa de red pueda recbirla.
+	 para que siga subiendo segun el modelo
+
+
+*****************************************************
+*****************************************************
+fUNCIONES DE LA CAPA DE ENLACE DE DATOS
+
+
+Gestion del canal: la capa va a contar con protocolos que le
+     permiten a la señal decir si va a una solo canal o si es
+	 duplex o full duplex.
+	 si va de un sentido a otro
+
+
+Segmentación de la trama:
+		El tamaño del mensaje no puede ser muy grande ni muy pequeño.
+		Verifica que no sean tramas muy largas ni cortas.
+		1528 bytes es el tamaño maximo de paquetes segmentado atraves
+		del medio y no menor a 64 bytes
+
+*********************************************************
+		LA CAPA DE ENLACE DE DATOS
+*********************************************************
+
+La capa de enlace de datos lo que hace es tomar los segmentos
+tramas que an llegado al sitio final para codificar de nuevo los bytes
+
+tambien se encarga de limitar el tamaño de la trama
+
+
+Control de errores y recuperación de fallos:
+		Lo que hace es poner caracteres que nos ayudan al final
+		de la trama para identificar si esos datos llegaron completos,
+		si se agrego información por el camino o si se perdió.
+
+		SI llega mal vuelve apedir el envio 

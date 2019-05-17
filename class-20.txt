@@ -1,0 +1,15 @@
+Protocolo de resolucion de direcciones ARP
+
+Ya sabemos que podemos enviar paquetes de diferentes formas por la red .
+
+para esto contamos con la ARP (Protocolo de resolucion de direcciones)
+	Tiene dos funciones:
+	 1 = resuelve o tiene esa relacion de direcciones ip y mac
+	 	 osea logicas y fisicas que esten conectados a una red LAN
+		 cada host(dispositivo) que este conectado tiene una tabla
+		 de cache ARP
+
+	 2 = Mantener actualizada esta tabla
+	     Osea envia un paquete a todos los host para almacenar
+		 su informacion asi forma una tabla y por siclos
+		 mantiene actualizada su table de cache ARP  

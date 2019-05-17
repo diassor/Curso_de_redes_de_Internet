@@ -1,0 +1,62 @@
+Capitulo 6 Capa de Red
+
+Capa de RED
+	son  las  direcciones logicas
+
+Es la que se encarga de enrutar los datos a travez de diferentes redes
+
+
+Funciones de la capa de red
+
+tiene 4 funciones principales :
+
+	1 = hacer el Direccionamiento de los paquetes
+			asigana las direcciones logicas a los  paquetes
+
+	2 = encapsulamiento de paquetes
+
+	3 = router					es cuando el router recibe una trama
+
+	4 = desencapsulamiento =	abre la trama para saber las direcciones
+								logicas (desencapsulamiento)
+
+			determina cual es el siguiente salto que debe seguir
+			hacia donde debe enviar ese paquete
+			Luego vuelve y encapsula
+
+
+****************************
+PDU de la capa de red
+****************************
+
+1 = Aplicación = datos generados de la capa de aplicacion
+2 = TCP = ya pasaron po la capa de transporte en la que se definio
+ 		  como iba a ser enviado ese paquete (osea que protocolo
+		  se uso para ese paquete si es tcp o udo )
+		  y se asigna tambien los puertos
+
+		  Este segmento que es el PDU de la capa de transporte
+		  llega a la capa de red
+
+3 = RED = Donde se asignan tres campos muy importantes
+		1 = direccion de origen (src)
+		2 = direccion de destino (dest)
+		3 = TTl (Time To Live)Es un campo muy importante a la hora de enviar
+				un paquete por la red
+
+			TTl (Time To Live) :
+				Es la cantidad maxima de saltos por los que debe
+				pasar un mensaje hasta que es rechazado
+				Por lo general tiene 64 saltos pero los podemos
+				modificar
+
+				Saltos = Envio del paquete de un router a otro esto
+						 se llama saltos
+						 para poder identificar por donde tiene que entrar
+						 ese mensaje
+						 si salto mas del maximo es descartado
+
+
+		
+Cada PDU tiene muchos campos adicionales para direntes funciones
+(Cada pdu esta en cada capa)

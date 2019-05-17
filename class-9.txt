@@ -1,0 +1,165 @@
+Practica : Navegacion por el sistema operativo, comandos y privilegios
+
+Entramos a la consola de Packet Tracer un doc nuevo
+
+Selecionamos : switch 2960 --> entramos cli --> entramos a la promt
+		escribimos  enable --> dapermisos de Configuracion basica
+					configuare terminal --> da privilegios
+		switch : enable --> switch#
+
+		Switch#show running-config
+
+Building configuration...
+
+Current configuration : 1078 bytes
+
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Switch
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+
+		No tiene ninguna Configuracion ahora
+
+
+		Switch#configure t
+Enter configuration commands, one per line.  End with CNTL/Z.
+
+Switch(config)#host
+Switch(config)#hostname  PlatziS1  cambiando nombre del hostname
+PlatziS1(config)#enab
+PlatziS1(config)#enable secr
+PlatziS1(config)#enable secret password  --> poniendo contraseña (password)
+PlatziS1(config)#banne
+PlatziS1(config)#banner mot
+PlatziS1(config)#banner motd # Hola bienvenidos #  --> palabras de bienvenida
+PlatziS1(config)#^Z  --> salir modo config
+PlatziS1#
+%SYS-5-CONFIG_I: Configured from console by console
+
+PlatziS1#exit  --> salir del promt
+
+	PlatziS1 con0 is now available
+	Press RETURN to get started.
+
+ Hola bienvenidos
+
+PlatziS1>enable  --> entramos a Configuracion normal
+Password: (password) --> pide contraseña
+PlatziS1# --> Entramos
+PlatziS1#configure t --> entramos a Configuracion global
+
+Enter configuration commands, one per line.  End with CNTL/Z.
+
+PlatziS1(config)# interface vlan 1  --> cambiamos la interface vlan 1
+
+PlatziS1(config-if)#ip address 192.168.1.2 255.255.255.0
+					--> cambiamos ip y mask
+
+PlatziS1(config-if)#no shutdown --> comando para no apagar el switch
+
+PlatziS1(config-if)#
+%LINK-5-CHANGED: Interface Vlan1, changed state to up  -->encendido
+
+PlatziS1(config-if)#
+
+PlatziS1(config-if)#^Z  --> salir de Configuracion global
+
+PlatziS1#  --> salir de Configuracion
+%SYS-5-CONFIG_I: Configured from console by console
+exit
+
+
+PlatziS1 con0 is now available
+
+
+Press RETURN to get started.
+
+
+ Hola bienvenidos
+
+
+PlatziS1>enable
+Password:
+PlatziS1#copy run startup-config  --> guardar toda la confirmación
+Destination filename [startup-config]? --> solo dar Enter
+Building configuration...
+[OK]
+
+PlatziS1#show running-config --> ver la Configuracion
+Building configuration...
+
+Current configuration : 1175 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption //--> password encriptada
+!
+hostname PlatziS1
+!
+enable secret 5 $1$mERr$GvDaTJK9lhdXRUPWKA74O0
+!
+
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+!
+interface Vlan1  //--> Configuracion guardada
+ ip address 192.168.1.2 255.255.255.0
+!
+banner motd ^C Hola bienvenidos ^C
+!
+
+
+**********************************************
+SALIMOS DEL Switch
+***********************************************
+
+
+
+
+
+Configuracion de la PC
+
+selecionamos la pc --> config
+					INTERFACE --> FastEthernet0
+		Static --> ip address 198.168.1.10
+		mack   --> 255.255.255.0
+
+salimos del config
+
+ponemos un clable copper Straight-Through
+
+pc = FastEthernet0  y switch = FastEthernet0/1
+
+en pc entramos a desktop --> seleccionamos Command prompt
+
+hacemos un ping 192.168.1.2
+
+C:\>ping 192.168.1.2
+
+Pinging 192.168.1.2 with 32 bytes of data:
+
+Request timed out.
+Reply from 192.168.1.2: bytes=32 time<1ms TTL=255
+Reply from 192.168.1.2: bytes=32 time<1ms TTL=255
+Reply from 192.168.1.2: bytes=32 time<1ms TTL=255
+
+Ping statistics for 192.168.1.2:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+C:\>

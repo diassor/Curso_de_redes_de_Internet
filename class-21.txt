@@ -1,0 +1,39 @@
+El Switch y el AP
+
+
+Recordemos de la capa Física y de medios de red es la que se encarga
+de hacer conexión entre dispositivos usando interfaces y direcciones
+físicas.
+
+En esta capa contamos con varios dispositivos y vamos a ver
+cuáles son y sus diferencias.
+
+El Switch
+	Es el dispositivo que nos permite realizar conexiones físicas
+	entre hosts,
+	el switch se encarga de filtrar y direccionar los paquetes
+	a través de la red de área local LAN.
+
+El switch permite la conexión entre dispositivos a través del medio
+	cableado.
+
+Existe otros dispositivo que nos permite hacer la conexión de manera
+	casi igual, es el Hub, incluso pueden verse iguales,
+	pero yo te recomiendo no usar este dispositivo.
+
+Mientras el switch toma los paquetes que llegan y analiza las
+	direcciones físicas de los hosts conectados para reenviar el
+	paquete únicamente a su destinatario el hub envía el mensaje
+	por todos los canales, sin tener en cuenta el direccionamiento.
+
+*******************
+El Access Point AP
+*******************
+
+Otro dispositivo de la capa física es el Access Point,
+	este dispositivo es el encargado de realizar el enlace
+	entre las redes cableadas y las redes inalámbricas.
+
+	Nos permite crear redes LAN haciendo haciendo uso de las
+	ondas de radio.
+	

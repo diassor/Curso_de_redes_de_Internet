@@ -1,0 +1,103 @@
+Capitulo 5 capa fisica y medios de red
+
+capa fisica : elementos, funciones, transferencia de datos,
+	ancho de banda y rendimiento
+
+
+Para que logremos una conexión de red siempre depende de un cable.
+Aquí te muestro cómo la información está siendo transformada desde l
+os bits hasta que toma la forma que espera el receptor.
+
+	Hay algunas organizaciones que regulan los estándares de la
+	capa física como TIA y la EIA.
+
+	La capacidad de los medios para transportar los datos depende
+	del ancho de banda, el rendimiento y la capacidad de transferencia
+	útil.
+
+	Para que haya una comunicación en red debe haber un medio,
+	de esto se ocupa la capa física (cables u ondas de radio).
+
+	La capa física está compuesta por:
+
+	    Cable de cobre
+	    Cable de fibra óptica
+	    Inalámbrico (ondas de radio)
+
+
+		Resumen
+*********************************************
+
+Capa física: la capa física es el medio por el que es transmitida la
+			 información, y ese medio pueden ser cables o ondas de radio.
+
+
+Switch: el switch es un dispositivo que recibe la señal y físicamente
+		la envía por cable, el switch es dispositivo de dos capa  que
+		distribuye por cable.
+
+NIC: tarjeta de red que tienen los computadores hay tarjetas que nos
+	 podemos comunicar por cable y otras inalámbrico, el funcionamientos
+	 de la tarjeta NIC es que se conecta la tarjeta Madre del computador
+	 con acceso a internet y le proporciona los puertos y la parte
+	 física de circuitos y los algoritmo,
+	 y le permiten que se comunique con los medios.
+
+	Funciones de capa física
+		Controlar los componentes físicos.
+		Codificar decodificar los datos.
+		Señalización.
+
+Señales que son transmitidas en la capa física
+	Los medios por los cuales es enviadas estas señales son:
+
+		Cable de cobre: Lo que transportan son pulsos eléctricos
+
+		Cable de fibra óptica: el cable de fibra óptica lo que
+							   transportan son ondas de luz,
+							   la ventaja que tiene es que la
+							   interferencia es mínima.
+
+		Inalámbrico: es medio lo que lleva son ondas electromagnéticas
+
+
+
+    ISO : Organización que crea estándares que ofrecen
+		  especificaciones de clase mundial para productos,
+		  servicios y sistemas, para garantizar la calidad,
+		  la seguridad y la eficiencia.
+
+	IEEE : es la organización profesional técnica más grande del
+		   mundo dedicada al avance de la tecnología para el beneficio
+		   de la humanidad.
+
+	ANSI : Administra y coordina el desarrollo de estándares de
+		   consenso voluntarios para productos, servicios, procesos,
+		   sistemas y personal en los Estados Unidos.
+
+	ITU : Se encargan de elaborar normas técnicas que garantizan la
+	      interconexión continua de las redes y las tecnologías
+
+	EIA/TIA : son asociaciones de comercio que desarrollan y publican
+	          juntas una serie de estándares que abarcan el cableado
+			  estructurado de voz y datos para las LAN.
+
+	FCC : Se encarga de regular las comunicaciones interestatales por
+	      radio, televisión, cable, satélite y cable.
+		  La FCC trabaja para alcanzar seis objetivos en las áreas de
+		  banda ancha, competencia, espectro, medios, seguridad pública
+		  y seguridad nacional, y se moderniza a sí misma.
+
+
+Ancho de Banda = Es la capacidad maxima que tiene un medio para
+                 transportar datos
+
+rendimiento  =  es la tasa real de datos que fueron transmitidos .
+                varia mucho del medio por el que esta siendo tranasportada
+				la senal
+
+
+Capacidad de trasnferencia util = Cantidad de datos utiles que
+ 				puede ser enviados por la red
+
+				

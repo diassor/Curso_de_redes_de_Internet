@@ -1,0 +1,10 @@
+Practica : ponchado de cables de red
+
+segunla norma ern que fue elaborado el clabe podemos conectar dos dispositivos
+
+se hiso un enpalme del cable de internet con el conector
+
+para construir los enpalmes se hace segun la norma y segun
+el dispositivo a conectar
+osea de ruter ala computadora es diferente
+a un cable coaxial que viene de afuera y conecta con el moden

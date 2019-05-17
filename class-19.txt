@@ -1,0 +1,35 @@
+Procesamiento de tramas
+
+ya sabemos que cada dispositivo que esta conectado a la red tienen una
+direccion mac que esta vinculada con su targera de red
+
+Como sale una trama de un dispositivo hasta que es encontrado por
+el dispositivo de destino
+
+1 La mac se copia a la ram
+2 se asigna una direccion de origen y final
+3 se envia atravez de los medios en este espacio tan grande comienza a
+	ubicarse y preguntar quien es la direccion final
+	para descargar el mensaje
+
+4 quien recibe compara su mac que esta guardada en la ram
+	y la compara con el paquete que llego si conside con su mac
+
+5 descodifica el paquete
+
+
+*************************************
+*************************************
+Este envio de los datos a travez de los medios usando las
+	direcciones mac y las ip osea direcciones fisicas y logicas
+	que se hace atravez del protocolo ARP se puede hacer a diferentes
+	dispositivos o de diferentes maneras :
+
+Unicast : un solo host (dispositivo)
+
+Multicast = son envios a todo un grupo (selecionamos un grupo y enviamos
+			informacion solamente a ese grupo con la combinación de
+			la mac y la ip)
+
+Broadcast =  o de difuncion se envia a todos los miembros de la red
+			 
