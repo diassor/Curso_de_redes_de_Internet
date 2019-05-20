@@ -1,0 +1,121 @@
+PROTOCOLOS IP asignación de direcciones ip, mascara de bits
+
+
+El protocolo IP es el que nos permite hacer el direccionamiento y enroutamiento
+de los mensajes atravez de la red
+
+El protocolo IP atravez de diferentes algoritmos se encarga de trazar
+la mejor ruta para que los mensajes lleguen de un punto a otro
+
+enroutamiento
+	consiste en encontrar en camino que conecte una red con otra
+	ya vimos que esto se hace a traves de la tabla de enroutamiento
+	de los routers
+
+direccionamiento:
+	Se refiere a la forma en que se asignan las direcciones ip
+	a los diferentes dispositivos
+	ejemplo :  La creacion de subredes
+
+
+Direcciones IP
+	Es un Identificador logico de las interfaces de red de los
+	dispositivos que utilizan protocolo IP para la comunicación
+
+	IPv4-32 bits = 192.168.1.1
+		Esta version tiene 32 posibilidades de tener un uno o
+		un cero (1 o 0) .
+		Es una cadena que tiene 32 digitos (1 o 0)
+		La combinacion de estos 1 o 0 32 veces va hacer
+		= 2 elevado a la 32
+		4000 millones posibles direcciones IPv4 que pueden
+		ser asignadas
+
+	IPv6-128 bits = 2001:0D88:000A:0000:0000:0000:0000:1000
+		Esta version cuenta con 128 bits
+		representada con caracteres que van desde el 0 hasta 9
+		y A hasta la F en  todas las combinaciones posibles
+		son 128 bits que estan en secuencia y que tienen la opcion
+		de ser 1 o 0 toda la posibles combinaciones de estos bits
+		= 2 elevado a 128
+		el resulatado es en billones la cantidad de ip que se
+		pueden asignar
+
+La dirección MAC
+	Es fisica y se ensambla en la NIC del equipo (osea viene
+	por defecto de fabrica )
+
+
+
+Las IP se pueden separar en diferentes clases
+	Esta separacion lo que nos va a permitir es poder
+	identificar facilmente cual es la mascara de subred
+
+
+	CLASE A :
+		El primer octeto identifica la red.
+		Tres ultimos octetos (24bits) pueden ser asignados a los hosts
+		La cantidad maxima de hosts es (2 a la 24 - 2)
+		16 777 241 hosts
+
+	Es una red que cubre muchos hosts , osea en espacios muy amplios
+	en redes de areas metropolitanas
+
+
+	CLASE B
+		Dos primeros octetos para identificar la red
+		Dos octetos finales (16 bits) para que sean asignados
+			a los hosts
+		Cantidad maxima de hosts por cada red es (2 a la 16 -2)
+		65 534 hosts
+
+	Es una red mas pequena
+
+	CLASE C
+		Tres primeros octetos para identificar la red
+		octeto final (8 bits ) para que sea asignado a los hosts
+		Cantidad maxima de hosts por cada red es (2 a la 8 -2)
+		254 hosts
+
+	Normalmente estan en las redes de areas locales pero
+	254 host o redes son muchas en caso de solo querer una red
+	de 30 se desperdicia una cantidad muy alta de direcciones ip
+	para evitar ese desperdicio se usan tecnicas de asignación
+	variables de esa mascara de subred
+
+Mascara de Subred
+	Nos permite identificar a simple vista la porcion de la
+	direccion IP que se ha asignado a la identificacion de la red
+	y la porcion que se a asignado a los hosts
+
+	A = 255.0.0.0 o 111111111.000000000.000000000.000000000
+	B = 255.255.0.0 o  111111111.111111111.000000000.000000000
+	C = 255.255.255.0 o 111111111.111111111.111111111.000000000
+
+	La mascara de subred se forma poniendo en uno (1) los bits
+	que identifican la red y en cero (0) los bits que identifican
+	los hosts
+
+Nosotros podemos hacer la asignaciond de la mascara de subred
+de forma variable
+
+Podemos identificar diferentes grupos de ip que ya estan hay
+que ya se usan solamente para ese determinado servicio estos
+grupos de ip no se pueden usar para otras cosas ya que estan definidos
+
+
+	Direcciones privadas : (no se pueden enrutar a traves de internet)
+		a. 10.0.0.0/8 a 10.255.255.255
+		b. 172.16.0.0/16 a 172.31.255.255
+		c. 192.168.0.0/24 a 192.168.255.255
+
+	Direcciones de loopback
+		127.0.0.0/8 a 127.255.255.254
+
+	Direcciones de Link Local
+		169.254.0.0/16 169.254.255.254
+
+	Test
+		192.0.2.0/24
+
+	

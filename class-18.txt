@@ -1,0 +1,79 @@
+Trama de enlace de datos y direcciones mac
+
+
+El protocolo ethernet se encarga de la gestión de direcciones
+físicas que nos ayudan a conectar con la capa lógica y la capa física.
+
+El UDP de esta capa se llama trama o freme
+
+Está compuesta por un encabezado (direcciones físicas),
+datos (traen información de la capa de red y la capa de transporte)
+y trailer.
+
+
+
+
+Trama de enlace de datos y direcciones mac
+
+Trama de ethernet: El protocolo ethernet se encarga de la función de
+				   conectar la capa lógica con la física
+
+El PDU de esta capa de enlaces de datos se llama trama o frame y
+	esta conformada por tres partes principales son:
+
+    Encabezado
+        Direccionamiento mac origen y destino
+
+	Datos = Los datos an pasado por un proceso de encapsulamiento
+	 		ya pasaron por la capa de transporte en la que fueron
+			agregados otros protocolos :
+				se definio si esta viajando por TCP o por UDP
+				se agragaron los puertosy hay paso a ser empaquetado
+				en la capa de red
+
+			En la capa de red se agrego informacion logica de las
+			direcciones de destino y de origen de este mensaje
+
+			Esto llega y es empaquetado de nuevo y ahora estara en
+			una trama o frame en el que contiene tambien informacion
+			de las direcciones fisicas de los dispositivos de alli pasa
+			al traile
+
+	Trailer
+			de alli va a tener unos byts que nos van a ayudar a
+			identificar si la trama llego si el tamaño es correcto
+			si llego bien , si llego completa
+			para eso tenemos el :
+
+        FCS Frame Check Sequence
+			que es un numero que se calcula apartir de los Datos
+			y que nos ayuda a identificar si los datos llegaron
+			correctos o no
+
+			si al desencapsularse esta trama este numero no coincide
+			esa trama es descartada
+			es la forma de saber si la trama llego correcta o no
+
+        Stop Frame
+
+Otro tema que hace la capa de datos es la Sincronizacion
+es otro valor quese agrega al final de la trama para saber
+cuando finaliza
+
+Direcciones MAC
+    Una dirección MAc es una dirección física que tiene la tarjeta
+	de red, todos los dispositivos tienen una dirección MAC
+
+Identificador único de la NIC
+
+    12 dígitos hexadecimales
+    Es única por por dispositivo
+
+	importante :
+
+	La direccion MAC esta compuesta por dos partes,
+
+	los primeros tres bytes indican quien es el que fabrico la tarjeta
+	(cada fabricante tiene su UOI que los identifica)
+	y las otras tres bytes  son que identifican en 	especial
+	esa targera de red.

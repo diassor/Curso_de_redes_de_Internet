@@ -1,0 +1,109 @@
+Practica final con packet tracer , asignacion de direccionamiento y
+confirmación de equipos de red
+
+
+De la clase 27 vamos hacer una practica con dicha informacion
+
+*****************************************************************
+*****************************************************************
+DIRECCIONAMIENTO IP
+
+
+	RED                    subred
+
+183 = 10110111			11111111
+26 =  00011010			11111111
+103 = 01100111			11111111
+215 = 11010111			11111100
+
+hacemos la comparacion AND
+
+1 and 1 = 1
+1 and 0 = 0
+
+	10110111.00011010.01100111.11010111  dirección de red
+	11111111.11111111.11111111.11111100
+
+	10110111.00011010.01100111.11010100
+		183     26      103      212       direccion de Broadcast
+
+
+Ahora primera direccion de rango de redes y ultima ?
+
+ red Broadcast   183.26.103.215
+ red privada     183.26.103.212
+ 1ra red 		 183.26.103.213
+ last red 		 183.26.103.214
+
+En esta red solo tenemos dos posibilidades por que
+
+
+
+192.168.1.0/24  a simple vista podemos identificar que tenemos una
+	red de clase C
+	de esta red nos piden que hagamos 4 segmentos
+	/24 quiere decir que tenemos 225 hosts
+
+	cuantos bits tengo que pedirle prestado a  la porcion de host
+	para poder obtener estas 4 subredes
+
+	2 a la n -2 (cantidad de bits ) cuantos van a cambiar a uno (1)
+
+	2 n -2 >=  4
+
+	n = 1  (2 a la 1 - 2 = 0)  no sirven
+	n = 2  (2 a la 2 - 2 = 1)  no sirven
+	n = 3  (2 a la 3 - 2 = 4)  si sirve
+
+ahora le pedimos prestado al host 3 bits para la segmentación de la red
+
+	192 = 11000000
+	168 = 10101000
+	1   = 00000001
+	0   = 00000000
+
+	como le pedimos prestado al host 3 bits queda
+		192.168.1.0/27  ya no 24 por que se suman los 3 bits que se necesitan
+
+ya definimos la mascara  = 192.168.1.0/27
+el salto de red es =
+	de DR a DB  que distancia debe haber
+
+	de la submascara cambio de 24 a 27
+	lo que quiere decir que presto 3 bits
+	00000000 = 24
+	11100000 = 27
+	hay 5 ceros estos 5 ceros son espacios lo que se valora
+	para el salto
+	2 a la n - 2 =  (para el salto solo dejamos la potencia)
+	2 a la 5 = 32
+	32 es el salto que necesitamos (cada 32 IP )
+
+cuantas ip puedo usar encada segmento
+	2 a la n - 2 =
+	2 a la 5 - 2 = 30
+	30 son la cantidad de ip que puedo hacer encada segmento
+
+segun el salto es cada 32 lo que quiere decir que
+de 0 + 32 = 32 y 32 +32 = 64 y asi sucesivamente
+
+		DR				1ra				last			DB
+
+1)  192.168.1.0		192.168.1.1		  192.168.1.30		192.168.1.31
+2)	192.168.1.32	192.168.1.33	  192.168.1.62		192.168.1.63
+3)	192.168.1.64	192.168.1.65	  192.168.1.94		192.168.1.95
+4)	192.168.1.96	192.168.1.97	  192.168.1.126		192.168.1.127
+
+
+ya con esto podemos agrupar estas redes con esto tenemos mayor control
+del manejo de las ip
+
+
+5) 192.168.1.128	192.168.1.129	  192.168.1.140		192.168.1.141
+6) 192.168.1.142	192.168.1.143	  192.168.1.154		192.168.1.155
+
+
+
+
+	11000000.10101000.00000001.11100000
+	11111111.11111111.11111111.11111111

@@ -1,0 +1,20 @@
+IPs Publicas y Privadas
+
+En las redes de area local se asignan direcciones a los dispositivos
+que permiten la conexion entre ellos .
+
+Las direcciones privadas son aquellas que no se pueden enrutar
+a traves de internet
+
+Las direcciones IP publicas son aquellas que permiten la conexion con internet
+
+Todos los dispositivos que estan atras de un mismo router tienen
+diferentes IP privadas unicas en ese segmento de red y una direccion
+publica que permite la conexion entre diferentes redes al
+rededor del mundo, esta direccion IP publica es la direccion del
+Router
+
+El segmento de direcciones privadas se encuentran entre 
+
+10.0.0.0/8 a 10.255.255.255  para redes con conexión inalambrica
+192.168.0.0/16 a 192.168.255.255 para redes conectadas por medio de cableado

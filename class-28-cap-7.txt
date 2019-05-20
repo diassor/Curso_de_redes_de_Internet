@@ -1,0 +1,36 @@
+Capitulo 7 Capa de Transporte
+
+Funciones , elementos , protocolos y tareas
+
+En la capa de tranporte es la que se encarga de definir
+como es que es van hacer enviados los mensajes
+acordando los metadatos para el envio
+
+La capa de transporte es la que se encarga de definir como son enviados los
+datos a traves de la red
+
+	Segmentar los datos
+	Realizar el seguimiento de las conversaciones individuales
+	Identificar las aplicaciones de acuerdo con el puerto
+
+Recive los datos de la aplicacion y los segmenta para la trama
+osea divide los mensajes
+asigna ciertos numeros en los encabezados
+son campos que se agregan en el encabezado para hace el seguimiento
+y asi podemos clasificar que tipos de aplicaciones
+osea de que aplicacion me llego y a que aplicacion quiere llegar
+y eso se define por la asignacion de puertos
+
+como desarrollador le puedo decir a mis archivos o a la
+informacion que estas enviando que puerto vas a  viajar esto
+se asigna en la capa de transporte y de alli se empieza a clasificar
+
+hay dos formas principales para enviar los mensajes
+a traves de la capa de transporte
+son dos protocolos
+	TCP y UDP
+
+
+llegan los datos desde la capa de aplicacion
+estos datos son segmentados se asignan los puertos y las cabeceras luego
+pasa las siguientes capas 

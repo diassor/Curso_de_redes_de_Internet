@@ -1,0 +1,48 @@
+TCP y UDP
+
+determinan como son enviados los datos
+
+TCP = servicio orientado a la conexion
+	  se establece una sesion entre dos host
+
+	  garantiza la entrega mediante el uso de confirmaciones
+	  y la entrega secuencial de datos
+
+	  TCP mas lento , tiene requisitos de carga mayores y solo
+	  admite la comunicación punto a punto
+
+UDP = Servicio sin conexion :
+	  no se establece una sesion entre los host
+
+	  no garantiza ni confirma la entrega y no hay secuencia de datos
+
+	  UDP es rapido tiene requisitos de carga pequeños y puede admitir
+	  la comunicacion punto a punto y de punto a varios puntos
+
+Cuando queremos que los datos lleguen bien y con confirmacio
+estre tiene varios campos
+
+	numero de secuencia = forma secuencia de reconstruir en el
+							mismo orden
+
+El ACK es el numero de recibido  o de confirmacion
+
+Los primeros bits son obligatorios los campos restantes Podemos
+poner banderas de confirmacion o seguridad de informacion
+
+
+Inica la conversacion  dice hola (una bandera)
+al otro lado recibe el mensaje y devuelve el hola
+el ACk siempre esta iyendo y viniendo de un lado al otro
+confirmando el envio y la entrega
+si falta un segmento del mensaje hace la peticion del
+que hace falta
+ademas siempre mantiene la sesion abierta
+ejemplo whatsapp nunca cierra la sesion hasta que uno quiera
+
+
+
+la UDP no importa garantizar que los datos lleguen  o no
+ejemplo
+skype si tiene retardos o perdidad de segmentos
+no lo importa  un hola pantalla congelada y luego se activa

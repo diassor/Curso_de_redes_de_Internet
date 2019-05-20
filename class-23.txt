@@ -1,0 +1,72 @@
+Procesamiento de tramas
+
+La trama es el ultimo PDU que es enviado por los medios
+	y de pende del medio quita i pone datos segun el medio que
+	es enviado
+
+La trama es el PDU de la capa de enlace de datos (enlace de datos
+	coneccion entre capa fisica y logica)
+
+1 La capa llega con toda la informacion de la capa de aplicacion
+	donde se generan los datos
+
+2 pasa por la capa de TRANPORTE donde se identifica como va a ser enviado
+	ese mensaje
+
+3 Red se asignan las direcciones ip de alli ya pasa por un proceso
+	en la capa de enlace de datos identifica por cual medio  va ser enviados
+	el mensaje apartir de este medio el asigna direcciones mac y asigna
+	informacion relacionadas a ese medio
+	De alli sale y se convierte en bits osea en el tipo de senal
+	que va a ser enviado o transmitido y lo envia
+
+4 Receptor hace el proceso inverso de transformacion de las senales
+	para poder volver a codificarlas  has optener el mensaje en el
+	formato en que la aplicacion la necesita
+
+Para que esta trama pueda llegar al destino viaja por el cybermundo
+	atravez de routers (osea los saltos) por eso es bueno definir los
+	campos del TTL en el PDU de la capa de red.
+	Para que el mensaje no quede dando vueltas en la red eternamente
+
+Las tramas no varian solo son revizadas por los routers para ver su ip
+nuevamente la encapsulan y la renvian a otro router para ver si el
+tiene la ip de esta trama
+
+*******************************************************************
+*******************************************************************
+	DEFAULT GATEWAY O PUERTA DE ENLACE PREDETERMINADA
+
+	Es la ruta predeterminada o ruta por defecto que se le asigna
+	a un equipo y tiene como funcion enviar cualquier paquete del
+	que no conozca por cual interfaz enviarlo y no este defenido
+	en las rutas del equipo
+
+
+Para que nospodamos comunicar con diferentes redes podemos contar
+con tres Datos
+	la Direccion ip
+	la mascara de subred
+	el gateway o puerta de enlace predeterminada
+
+como se traza la ruta desde que sale del equipo y llega al servidor
+
+
+La tabla de enroutamiento ayuda al router a saber cual es siguiente
+salto o cual es siguiente dispositivo que el siempre deberia
+enviarle
+
+
+La tabla tiene dos caracterizticas principales
+es que ese protocolo de ARP conoce siempre todos los
+dispositivos que estan conectados ala red local
+
+Cada router conoce los dispositivos que estan conectados al el
+en su red local
+
+lo malo es que no conoce otras redes que sean remotas
+
+Cual es el siguiente salto si no conoces la red remotas o desconocidas
+
+podemos poner una ruta de forma manual en la tabla de router
+o de forma dinamica

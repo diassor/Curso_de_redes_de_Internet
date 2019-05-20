@@ -1,0 +1,33 @@
+Sesiones en vivo del curso
+
+
+En el Curso de Introducción a Redes de Internet estuvimos analizando
+cada una de las capas de red por las que viajan los mensajes desde
+su punto de origen hasta su destino.
+
+Una parte muy importante ya conociendo toda esta información
+poder realizar el diseño de redes adaptadas a las necesidades
+del negocio, de los usuarios, de los servicios que se van a entregar.
+
+Por esto tendremos dos sesiones en vivo del Curso de
+Introducción a redes de Internet en las que estaremos hablando,
+primero de cómo se hace la asignación de direcciones IP
+tanto para hosts como para segmentos de red y segundo,
+ya con este direccionamiento vamos a hacer la simulación
+de la red y analizar algunas características importantes
+decrecimiento de la red, seguridad y dispositivos involucrados.
+
+Para seguir las sesiones te dejo aquí las fechas en las que
+podrás entrar a verlas:
+
+25 de mayo de 2018 Sesión en vivo: Direccionamiento IP y Subnetting
+8 de junio Simulación de una red en Packet Tracer
+
+Actualización de este material 3 de julio 2018.
+
+Hola!! las clases en vivo ya están en el curso, aquí las
+puedes encontrar:
+
+https://platzi.com/clases/redes/concepto/capa-de-red/direccionamiento-ip/material/
+
+https://platzi.com/clases/redes/concepto/proyecto1217/practica-final-con-packet-tracer-asignacion-de-dir/material/

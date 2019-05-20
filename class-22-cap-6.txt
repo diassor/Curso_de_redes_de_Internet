@@ -57,6 +57,6 @@ PDU de la capa de red
 						 si salto mas del maximo es descartado
 
 
-		
+
 Cada PDU tiene muchos campos adicionales para direntes funciones
 (Cada pdu esta en cada capa)
